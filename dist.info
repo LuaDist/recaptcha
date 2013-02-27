@@ -1,0 +1,38 @@
+type = "x86_64"
+arch = "Ubuntu"
+author = "Yuri Takhteyev"
+depends = {
+[[lua ~> 5.1]],
+[[luasocket >= 2.0]],
+}
+
+desc = "A Lua interface to reCaptcha"
+version = "9.03.16"
+maintainer = "Peter Drahoš"
+files = {
+Runtime = {
+[[lib/lua/recaptcha.lua]],
+}
+,
+Documentation = {
+[[share/recaptcha/doc//recaptcha.ico]],
+[[share/recaptcha/doc//howto.md]],
+[[share/recaptcha/doc//releases.rss]],
+[[share/recaptcha/doc//recaptcha.png]],
+[[share/recaptcha/doc//recaptcha.xcf]],
+[[share/recaptcha/doc//index.html]],
+}
+,
+Data = {
+[[share/recaptcha/LICENSE.txt]],
+}
+,
+Test = {
+[[share/recaptcha/test//recaptcha.cgi]],
+}
+,
+}
+
+license = "MIT/X11"
+name = "recaptcha"
+url = "http://sputnik.freewisdom.org/lib/recaptcha/"
